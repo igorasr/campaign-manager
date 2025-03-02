@@ -5,16 +5,15 @@ export class UpdateCampaignDto {
   @ApiProperty({ description: 'Nome da campanha', required: false })
   @IsString()
   @IsOptional()
-  name?: string;
+  nome?: string;
 
   @ApiProperty({
     description: 'Data de início da campanha',
-    required: false,
     example: '2025-03-02T12:00:00'
   })
   @IsDateString()
   @IsOptional()
-  startDate?: string;
+  dataInicio?: string;
 
   @ApiProperty({
     description: 'Data de término da campanha',
@@ -23,7 +22,7 @@ export class UpdateCampaignDto {
   })
   @IsDateString()
   @IsOptional()
-  endDate?: string;
+  dataFim?: string;
 
   @ApiProperty({
     description: 'Status da campanha',
@@ -37,5 +36,5 @@ export class UpdateCampaignDto {
   @ApiProperty({ description: 'Categoria da campanha', required: false })
   @IsString()
   @IsOptional()
-  category?: string;
+  categoria?: string;
 }

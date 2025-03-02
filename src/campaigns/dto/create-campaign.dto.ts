@@ -11,7 +11,7 @@ export class CreateCampaignDto {
   @ApiProperty({ description: 'Nome da campanha' })
   @IsString()
   @IsNotEmpty()
-  name: string;
+  nome: string;
 
   @ApiProperty({
     description: 'Data de início da campanha',
@@ -19,7 +19,7 @@ export class CreateCampaignDto {
   })
   @IsDateString()
   @IsNotEmpty()
-  startDate: string;
+  dataInicio: string;
 
   @ApiProperty({
     description: 'Data de término da campanha',
@@ -27,7 +27,7 @@ export class CreateCampaignDto {
   })
   @IsDateString()
   @IsNotEmpty()
-  endDate: string;
+  dataFim: string;
 
   @ApiProperty({
     description: 'Status da campanha',
@@ -41,5 +41,5 @@ export class CreateCampaignDto {
   @ApiProperty({ description: 'Categoria da campanha', example: 'Promoção' })
   @IsString()
   @IsNotEmpty()
-  category: string;
+  categoria: string;
 }
