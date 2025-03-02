@@ -53,7 +53,7 @@ DATABASE_URL=postgresql://user:password@localhost:5432/campaign_db
 
 ### 4. Inicie o Docker para o banco de dados
 
-Certifique-se de que o Docker está instalado e em execução. Para subir o banco de dados (no caso, um banco de dados MySQL), execute:
+Certifique-se de que o Docker está instalado e em execução. Para subir o banco de dados, execute:
 
 ```bash
 docker-compose up -d
@@ -73,7 +73,7 @@ A aplicação estará disponível em [http://localhost:3000](http://localhost:30
 
 A documentação da API foi gerada automaticamente utilizando o **Swagger**. Para acessá-la, após iniciar o servidor, basta acessar:
 
-[http://localhost:3000/api](http://localhost:3000/api)
+[http://localhost:3000/doc](http://localhost:3000/doc)
 
 A documentação irá listar todas as rotas da API, seus parâmetros, e exemplos de como utilizá-las.
 
