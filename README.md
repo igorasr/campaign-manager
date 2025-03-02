@@ -41,7 +41,17 @@ cd campaign-manager
 npm install
 ```
 
-### 3. Inicie o Docker para o banco de dados
+### 3. Edite as variaveis de ambiente
+
+Altere o nome do arquivo `.env-exemple` para `.env`
+
+Dados padrao para o container do projeto:
+
+```
+DATABASE_URL=postgresql://user:password@localhost:5432/campaign_db
+```
+
+### 4. Inicie o Docker para o banco de dados
 
 Certifique-se de que o Docker está instalado e em execução. Para subir o banco de dados (no caso, um banco de dados MySQL), execute:
 
@@ -49,7 +59,7 @@ Certifique-se de que o Docker está instalado e em execução. Para subir o banc
 docker-compose up -d
 ```
 
-### 4. Execute o projeto
+### 5. Execute o projeto
 
 Para iniciar o servidor de desenvolvimento, rode o comando:
 
