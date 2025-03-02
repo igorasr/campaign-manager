@@ -31,8 +31,8 @@ Este projeto é uma aplicação backend desenvolvida como parte de um teste téc
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/gerenciador-campanhas.git
-cd gerenciador-campanhas
+git clone https://github.com/igorasr/campaign-manager.git
+cd campaign-manager
 ```
 
 ### 2. Instale as dependências
